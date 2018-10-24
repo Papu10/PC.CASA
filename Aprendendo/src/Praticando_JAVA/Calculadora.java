@@ -42,6 +42,9 @@ System.out.println("Digite um numero");
 	   System.out.println("OPERAÇÃO ESCOLHIDA = MULTIPLICAÇÃO");
        System.out.println(numero1 +"x"+ numero2 +"="+ (numero1 * numero2));
        break;
+       default:
+    	   System.out.println("OPÇÃO INVÁLIDA");
+    	   break;
 	}
 	}
 }
