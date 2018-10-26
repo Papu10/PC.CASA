@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class AP_8_DETETIVE {
 
 	public static void main(String[] args) {
+		//O SEGUINTE ALGORITMO FAZ 5 PERGUNTAS E O USUARIO RESPONDE SIM OU NAO. CASO O USUARIO RESPONDA 3 SIM ELE É CONSIDERADO CULPADO
+		//CASO RESPONDA 2 SIM , SERA CONSIDERADO INOCENTE.
+		//O CÓDIGO PERMITE APENAS RESPOSTAS COM NUMEROS 1 OU 0.
 		int resultado = 0;
 		int op1 , op2 , op3 , op4 , op5;
 		Scanner opc = new Scanner(System.in);
@@ -16,6 +19,9 @@ public class AP_8_DETETIVE {
 		case 1:
 			resultado++;
 		break;
+		case 0:
+			System.out.println(" ");
+			break;
 		default:
 			System.out.println("OPÇÃO INVÁLIDA");
 			System.exit(0);
@@ -25,6 +31,9 @@ public class AP_8_DETETIVE {
 		switch(op2) {
 		case 1:
 			resultado++;
+			break;
+		case 0:
+			System.out.println(" ");
 		break;
 		default:
 			System.out.println("OPÇÃO INVÁLIDA");
@@ -35,6 +44,9 @@ public class AP_8_DETETIVE {
 		switch(op3) {
 		case 1:
 			resultado++;
+			break;
+		case 0:
+			System.out.println(" ");
 		break;
 		default:
 			System.out.println("OPÇÃO INVÁLIDA");
@@ -46,6 +58,9 @@ public class AP_8_DETETIVE {
 		case 1:
 			resultado++;
 		break;
+		case 0:
+			System.out.println(" ");
+			break;
 		default:
 			System.out.println("OPÇÃO INVÁLIDA");
 			System.exit(0);
@@ -55,6 +70,9 @@ public class AP_8_DETETIVE {
 		switch(op5) {
 		case 1:
 			resultado++;
+			break;
+		case 0:
+			System.out.println(" ");
 		break;
 		default:
 			System.out.println("OPÇÃO INVÁLIDA");
@@ -65,7 +83,7 @@ public class AP_8_DETETIVE {
 		}else {
 			System.out.println("INOCENTE");
 		}
-		//UIIII TO METENDO O LOCO NISSO AKI EM PELO AMOR DLÇKFJASLUFAJSDGAS
+		
 	}
 }
 
