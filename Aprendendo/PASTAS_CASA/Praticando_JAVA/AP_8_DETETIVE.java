@@ -16,6 +16,9 @@ public class AP_8_DETETIVE {
 		case 1:
 			resultado++;
 		break;
+		default:
+			System.out.println("OPÇÃO INVÁLIDA");
+			System.exit(0);
 		}
 		System.out.println ("ESTEVE NO LOCAL DO CRIME? 1-SIM / 0-NÃO");
 		op2 = opc.nextInt();
@@ -23,6 +26,9 @@ public class AP_8_DETETIVE {
 		case 1:
 			resultado++;
 		break;
+		default:
+			System.out.println("OPÇÃO INVÁLIDA");
+			System.exit(0);
 		}
 		System.out.println("MORA PERTO DA VÍTIMA? 1-SIM / 0-NÃO");
 		op3 = opc.nextInt();
@@ -30,8 +36,35 @@ public class AP_8_DETETIVE {
 		case 1:
 			resultado++;
 		break;
+		default:
+			System.out.println("OPÇÃO INVÁLIDA");
+			System.exit(0);
 		}
-		System.out.println(resultado);
+		System.out.println("DEVIA PARA A VÍTIMA? 1-SIM / 2-NÃO");
+		op4 = opc.nextInt();
+		switch(op4) {
+		case 1:
+			resultado++;
+		break;
+		default:
+			System.out.println("OPÇÃO INVÁLIDA");
+			System.exit(0);
+		}
+		System.out.println("JA TRABALHOU COM A VÍTIMA? 1-SIM / 2-NÃO");
+		op5 = opc.nextInt();
+		switch(op5) {
+		case 1:
+			resultado++;
+		break;
+		default:
+			System.out.println("OPÇÃO INVÁLIDA");
+			System.exit(0);
+		}
+		if (resultado >= 3) {
+			System.out.println("CULPADO!");
+		}else {
+			System.out.println("INOCENTE");
+		}
 		//UIIII TO METENDO O LOCO NISSO AKI EM PELO AMOR DLÇKFJASLUFAJSDGAS
 	}
 }
